@@ -1,10 +1,6 @@
 import  epathxpress from "path";
 import  express from "express";
 
-const cUp = chalk.green;
-const cDown = chalk.red;
-
-
 const app = express();
 const port = 3000;
 
