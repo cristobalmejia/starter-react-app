@@ -4,6 +4,11 @@ import  express from "express";
 const app = express();
 const port = 3000;
 
+import url from 'url';
+
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 app.use(express.static(path.resolve(__dirname, '../client/public')));
 
 // Handle GET requests to /api route
